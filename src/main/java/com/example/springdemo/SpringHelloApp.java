@@ -9,13 +9,17 @@ public class SpringHelloApp {
                 new ClassPathXmlApplicationContext(" applicationContext.xml");
 
         // retrieve bean from spring container
-        Coach theCoach = context.getBean("myCoach", Coach.class);
+        CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
 
         // call method on the bean
-        System.out.println(theCoach.getDailyWorkput() );
+        System.out.println(theCoach.getDailyWorkout() );
 
         // call our new method for fortunes
         System.out.println(theCoach.getDailyFortune());
+
+        // call our new methods to get the literal values
+        System.out.println(theCoach.getEmailAddress());
+        System.out.println(theCoach.getTeam());
 
         // close the content
         context.close();

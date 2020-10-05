@@ -1,7 +1,7 @@
 package com.example.springdemo;
 
 public interface Coach {
-    public String getDailyWorkput();
+    public String getDailyWorkout();
 
     public String getDailyFortune();
 }

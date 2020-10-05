@@ -15,6 +15,15 @@
 		<!--set up constructor injection-->
 		<constructor-arg ref="myFortune"/>
 	</bean>
+
+	<bean id="myCricketCoach" class="com.example.springdemo.CricketCoach">
+		<!-- set up setter injection -->
+		<property name="fortuneService" ref="myFortune"/>
+
+		<!-- inject literal values -->
+		<property name="emailAddress" value="123@gmail.com"/>
+		<property name="team" value="CCU-MIS"/>
+	</bean>
 </beans>
 
 

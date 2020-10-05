@@ -3,7 +3,7 @@ package com.example.springdemo;
 public class TrackCoach implements Coach{
 
     @Override
-    public String getDailyWorkput(){
+    public String getDailyWorkout(){
         return "track corach here";
     }
 
