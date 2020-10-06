@@ -11,7 +11,9 @@
 	<!--define the dependency-->
 	<bean id="myFortune" class="com.example.springdemo.HappyFortuneService"/>
 
-	<bean id="myCoach" class="com.example.springdemo.BaseballCoach">
+	<bean id="myCoach" class="com.example.springdemo.TrackCoach" scope="prototype">
+<!--		singleton only create one instance, and everyone share the same object -->
+<!--		prototype will create one or more instances for every request-->
 		<!--set up constructor injection-->
 		<constructor-arg ref="myFortune"/>
 	</bean>
