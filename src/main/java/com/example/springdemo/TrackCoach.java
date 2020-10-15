@@ -12,7 +12,7 @@ public class TrackCoach implements Coach{
 
     @Override
     public String getDailyWorkout(){
-        return "track corach here";
+        return "track coach here";
     }
 
     @Override
